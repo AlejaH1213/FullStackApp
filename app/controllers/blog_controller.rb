@@ -15,8 +15,14 @@ class BlogController < ApplicationController
         @blog = Blog.create(blog_params)
     end 
 
+    def destroy 
+        @blog = Blog.find(params[:id])
+        @blog.destroy
+    end
+    
     private 
     def blog_params 
         params.require(:blog).permit(:title, :content)
     end 
+
 end

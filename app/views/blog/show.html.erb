@@ -1,2 +1,4 @@
 <h2> <%= @blog.title %></h2>
 <h3> <%= @blog.content %> </h3>
+
+<%= button_to 'delete', "/blogs/#{@blog.id}", method: :delete %>
