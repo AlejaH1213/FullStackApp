@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'blog#index'
-  resources :blogs
+  resources :blog
+  
   get 'blogs/:id/edit' => 'blog#edit'
   patch 'blogs/:id' => 'blog#update'
   get 'blogs/new' => 'blog#new'
