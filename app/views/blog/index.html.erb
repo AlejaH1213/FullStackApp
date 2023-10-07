@@ -1,7 +1,11 @@
-<h1>Robot Warning Signs Blog</h1>
+<h1>BLOG TITLE</h1>
 
 <ul>
     <% @blogs.each do |blog| %>
-        <li><%= blog.title %></li>
+        <li><%= blog.title %> 
+         <%= link_to 'SEE MORE', blog_path(blog) %>  
+        </li>
     <% end %>
 </ul>
+
+<%= link_to 'ADD NEW', new_blog_path %>

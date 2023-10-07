@@ -1,6 +1,6 @@
 <%= link_to 'Back to Home Page', '/' %>
 
-<h2> Add a robot warning sign </h2>
+<h2> ADD NEW </h2>
 <%= form_with model: @blog do |form| %>
 
     <%= form.label :title %>
@@ -11,5 +11,5 @@
     <%= form.text_field :content %>
 
     <br>
-    <%= form.submit 'Add Your Robot Warning Sign' %>
+    <%= form.submit 'ADD NEW' %>
   <% end %>
